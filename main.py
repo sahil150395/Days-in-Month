@@ -20,10 +20,8 @@ def days_in_month(iYear, iMonth):
   isLeapYear = is_leap(iYear)
   if isLeapYear and iMonth == 2:
       return month_days[1] + 1
-  elif not isLeapYear and iMonth == 2:
-      return month_days[1]
-  else:
-      return month_days[iMonth - 1]
+
+  return month_days[iMonth - 1]
 
   
   
